@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.form {
+    text-align: center;
+    margin: 50px 0px;
+}
+.inputDesign {
+    padding: 5px;
+    width: 250px;
+    border: 2px solid salmon;
+}
+
+.buttonDesign {
+    padding: 7px 15px;
+    background-color: #f06c4e;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+button {
+    padding: 7px 15px;
+    background-color: #f06c4e;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#foodDetail {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+#foodDetail img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.foodItem {
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 350px;
+    background-color: #f8f7f5;
+    cursor: pointer;
+}
+
+#foodIngredients {
+    text-align: center;
+}
+
+#foodIngredients h4 {
+    margin-bottom: 25px;
+}
+#foodIngredients img {
+    width: 400px;
+    height: 300px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+#foodIngredients li {
+    list-style: none;
+}
