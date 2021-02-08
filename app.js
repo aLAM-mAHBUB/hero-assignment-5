@@ -1,6 +1,7 @@
 document.getElementById("searchBtn").addEventListener("click", function () {
     const inputValue = document.getElementById("inputValue").value;
 
+    // load data
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputValue}`)
         .then((res) => res.json())
         .then((data) => displayFoodItems(data))
