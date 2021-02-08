@@ -3,13 +3,10 @@ document.getElementById("searchBtn").addEventListener("click", function () {
 
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputValue}`)
         .then((res) => res.json())
-        .then((data) => {
-            if (data.meals) {
-                displayFoodItems(data);
-            } else {
-                alert("Data not found");
-            }
-        });
+        .then((data) => displayFoodItems(data))
+        .catch((error) =>
+            displayError("Something went wrong. Please try again later."),
+        );
 });
 const displayFoodItems = (food) => {
     const foodItems = food.meals;
@@ -58,4 +55,9 @@ const renderFoodInformation = (ingredient) => {
 
     `;
     });
+};
+
+const displayError = (error) => {
+    const errorTag = document.getElementById("error-message");
+    errorTag.innerHTML = error;
 };
