@@ -44,7 +44,8 @@ const renderFoodInformation = (ingredient) => {
         const foodIngredients = document.getElementById("foodIngredients");
         foodIngredients.innerHTML = `
     <img src="${foodElements.strMealThumb}">
-    <h4> ${foodElements.strMeal}</h4>
+    <h3> ${foodElements.strMeal}</h3>
+    <h5>Ingredients:</h5>
     <ul>
     <li>${foodElements.strIngredient1}</li>
     <li>${foodElements.strIngredient2}</li>

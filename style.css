@@ -21,14 +21,6 @@ body {
     color: #fff;
 }
 
-button {
-    padding: 7px 15px;
-    background-color: #f06c4e;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-}
-
 #foodDetail {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -51,20 +43,29 @@ button {
 }
 
 #foodIngredients {
-    text-align: center;
+    padding: 80px 0;
 }
 
-#foodIngredients h4 {
+#foodIngredients h3 {
+    display: flex;
     margin-bottom: 25px;
 }
 #foodIngredients img {
-    width: 400px;
+    width: 450px;
     height: 300px;
     margin-top: 70px;
     margin-bottom: 30px;
     border-radius: 10px;
+    display: flex;
 }
-
+#foodIngredients h5 {
+    display: flex;
+    margin-bottom: 15px;
+}
+#foodIngredients ul {
+    margin: 0px;
+    padding: 0px;
+}
 #foodIngredients li {
-    list-style: none;
+    display: flex;
 }
