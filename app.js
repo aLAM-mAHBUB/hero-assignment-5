@@ -12,6 +12,7 @@ document.getElementById("searchBtn").addEventListener("click", function () {
 const displayFoodItems = (food) => {
     const foodItems = food.meals;
     const foodDetailDiv = document.getElementById("foodDetail");
+    foodDetailDiv.innerHTML = "";
     foodItems.forEach((foodItem) => {
         const foodItemDiv = document.createElement("div");
         foodItemDiv.className = "foodItem";
@@ -58,6 +59,7 @@ const renderFoodInformation = (ingredient) => {
     });
 };
 
+// Error Event Handler
 const displayError = (error) => {
     const errorTag = document.getElementById("error-message");
     errorTag.innerHTML = error;
